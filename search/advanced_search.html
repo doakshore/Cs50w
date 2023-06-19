@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Google Advanced Search</title>
+  <link rel="stylesheet" href="adv-search.css" />
+  <link rel="icon" href="google-icon.png">
+
+</head>
+
+<body>
+  <div class="google-logo">
+    <a href="index.html">
+      <img src="google-logo.png" alt="Google Logo" />
+    </a>
+  </div>
+  <header>
+    <div class="header-content">
+      <h1>Advanced search</h1>
+    </div>
+  </header>
+  <main>
+    <section class="advanced-form">
+      <form action="https://www.google.com/search" method="GET">
+        <div class="form-headers">
+          <h2>Find pages with...</h2>
+          <h3>To do this in the search box.</h3>
+        </div>
+        <div class="form-group">
+          <div class="column1">
+            <label for="all-words">All these words:</label>
+          </div>
+          <div class="column-input">
+            <input type="text" id="all-words" name="as_q" required />
+          </div>
+          <div class="column2">
+            Type the important words: tri-color rat terrier
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="column1">
+            <label for="exact-phrase">This exact word or phrase:</label>
+          </div>
+          <div class="column-input">
+            <input type="text" id="exact-phrase" name="as_epq" />
+          </div>
+          <div class="column2">
+            Put exact words in quotes: "rat terrier"
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="column1">
+            <label for="any-words">Any of these words:</label>
+          </div>
+          <div class="column-input">
+            <input type="text" id="any-words" name="as_oq" />
+          </div>
+          <div class="column2">
+            Type OR between all the words you want: miniature OR standard
+          </div>
+        </div>
+        </div>
+        <div class="form-group">
+          <div class="column1">
+            <label for="none-words">None of these words:</label>
+          </div>
+          <div class="column-input">
+            <input type="text" id="none-words" name="as_eq" />
+          </div>
+          <div class="column2">
+            Put a minus sign just before words that you don't want:<br> -rodent,
+            -"Jack Russell"
+          </div>
+        </div>
+        <div class="buttons">
+          <button type="submit" class="adv-btn" name="Google Advanced Search">
+            Advanced Search
+          </button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="google-footer">
+      <p>Google version:</p>
+      <a href="https://www.google.com/">Google</a>
+    </div>
+  </footer>
+</body>
+
+</html>

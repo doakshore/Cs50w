@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Google Image Search</title>
+  <link rel="stylesheet" href="search.css" />
+  <link rel="icon" href="google-icon.png">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Google Search</a></li>
+        <li><a href="image_search.html">Image Search</a></li>
+        <li><a href="advanced_search.html">Advanced Search</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="search-container">
+      <div class="google-logo">
+        <img src="google-logo.png" alt="Google Logo" />
+        <span class="img-text">images</span>
+      </div>
+      <form action="https://www.google.com/images" method="GET">
+        <div class="search-bar">
+          <label for="image-search-input">
+            <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="8.5" cy="8.5" r="5" fill="none" stroke="#808080" stroke-linecap="round"
+                stroke-linejoin="round"></circle>
+              <path d="m17.571 17.5-5.571-5.5" fill="none" stroke="#808080" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+            </svg>
+          </label>
+          <input type="text" id="image-search-input" name="q" placeholder="Image search" />
+        </div>
+        <div class="buttons">
+          <button type="submit" class="img-btn">Google Image Search</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <div class="google-footer">
+      <p>Google version:</p>
+      <a href="https://www.google.com/">Google</a>
+    </div>
+  </footer>
+</body>
+
+</html>
